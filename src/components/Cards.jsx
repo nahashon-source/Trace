@@ -1,3 +1,4 @@
+import './Cards.css'
 function Cards({ musicData }) {
   return (
     <div className="music-grid">

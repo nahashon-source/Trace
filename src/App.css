@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #121212;
+  background: linear-gradient(135deg, #0c0606, #b3b0b0);
   color: #ffffff;
   font-family: 'Inter', sans-serif;
 }
@@ -15,9 +15,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  object-fit: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 /* Search bar styles */
@@ -29,6 +31,7 @@ body {
 
 .search-bar {
   width: 100%;
+  position: relative;
   max-width: 600px;
   padding: 1rem 1.5rem;
   font-size: 1.1rem;
@@ -37,6 +40,8 @@ body {
   border-radius: 50px;
   color: #fff;
   transition: all 0.3s ease;
+  margin-top: 260px;
+  align-items: center;
 }
 
 .search-bar:focus {
@@ -88,6 +93,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  align-items: center;
 }
 
 .music-card p {
