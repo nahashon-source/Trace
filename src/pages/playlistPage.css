@@ -1,0 +1,60 @@
+.playlist {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .music-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .music-item:hover {
+    background-color: #b4d6e9;
+  }
+  
+  .music-item.playing {
+    background-color: #64b4b4; /* Spotify Green */
+    color: white;
+  }
+  
+  .music-cover {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+  }
+  
+  .music-info {
+    flex-grow: 1;
+    margin-left: 15px;
+  }
+  
+  .play-button {
+    background-color: #6ddf22;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .play-button:hover {
+    background-color: #6e7686;
+  }
+  
+  .audio-player {
+    margin-top: 30px;
+  }
+  
+  audio {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
