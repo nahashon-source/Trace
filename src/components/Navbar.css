@@ -1,0 +1,85 @@
+.navbar {
+    background-color: rgb(167, 163, 162);
+    padding: 10px 0; 
+    width: 100%; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    border-bottom: 3px solid #0f0d0d;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none; 
+    color: rgb(15, 13, 13); 
+    font-size: 17px;
+    font-weight: lighter; 
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #ffcc00; 
+  }
+  .logo {
+    font-size: 24px; /* Adjust the size of the logo */
+    font-weight: bold;
+    color: white;
+    position: absolute;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Arial', sans-serif;
+  color: #131414; /* Initial color */
+  text-shadow: 
+      0 0 5px red,     /* Red glow */
+      0 0 10px green,  /* Green glow */
+      0 0 15px blue,   /* Blue glow */
+      0 0 20px #ffcc00; /* Yellow glow for a more colorful effect */
+  animation: glow-animation 1.5s ease-in-out infinite; /* Make the glow pulse */
+}
+
+/* Keyframe animation for glowing effect */
+@keyframes glow-animation {
+  0% {
+      text-shadow: 
+          0 0 5px rgb(11, 83, 240),
+          0 0 10px green,
+          0 0 15px blue,
+          0 0 20px #ffcc00;
+  }
+  50% {
+      text-shadow: 
+          0 0 10px rgb(124, 235, 20),
+          0 0 20px green,
+          0 0 30px blue,
+          0 0 40px #ffcc00;
+  }
+  100% {
+      text-shadow: 
+          0 0 5px red,
+          0 0 10px green,
+          0 0 15px blue,
+          0 0 20px #ffcc00;
+  }
+}
+
+/* Styling the logo image */
+.logo-image {
+  width: 50px; /* Adjust the size */
+  height: auto;
+}

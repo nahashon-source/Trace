@@ -1,3 +1,5 @@
+import './SearchBar.css'; // assuming your CSS is in 'SearchBar.css'
+
 function SearchBar({ searchTerm, setSearchTerm }) {
     return (
       <div className="search-container">

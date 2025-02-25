@@ -17,8 +17,8 @@
     width: 100%;
 }
 .hero-video {
-    width: 209vh;
-    height: 70vh;
+    width: 219vh;
+    height: 50vh;
     object-fit: cover;
 }
 @media (max-width: 768px) {
@@ -26,3 +26,4 @@
     padding: 0 10px; 
     }
 }
+
