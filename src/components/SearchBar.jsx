@@ -1,4 +1,4 @@
-import './SearchBar.css'; // assuming your CSS is in 'SearchBar.css'
+import './SearchBar.css'; 
 
 function SearchBar({ searchTerm, setSearchTerm }) {
     return (
