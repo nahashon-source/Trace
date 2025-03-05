@@ -66,3 +66,27 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+.favourites-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.favourites-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.favourites-table th,
+.favourites-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.favourites-table th {
+  background-color: #f4f4f4;
+}
+
