@@ -6,6 +6,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Library from './pages/Library';
 import Favourites from './pages/Favourites.jsx'
+import Discover from './pages/Discover';
+import Profile from './pages/Profile.jsx';
 
 
 const App = () => {
@@ -25,13 +27,15 @@ const App = () => {
   return (
     <Router>
       <div className="app-container">
+      <Navbar/>
+
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<Navbar/>} />
           <Route path="/playlist" element={<PlaylistPage />} />
           <Route path="/library" element={<Library data={currentItems} pageCount={pageCount} handlePageClick={handlePageClick} />} />
           <Route path="/favourites" element={<Favourites />} />
+          <Route path="/discover" element={<Discover />} />
         </Routes>
       </div>
     </Router>
