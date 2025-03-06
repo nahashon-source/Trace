@@ -1,92 +1,286 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+/* Centering the container */
+.library-container {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; /* Ensures full width */
+  background-color: #f5f5f5;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-
-.favourites-container {
-  width: 80%;
-  margin: auto;
+/* Styling the library card */
+.library-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
   text-align: center;
 }
 
+/* Header styling */
+.library-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.library-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.library-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Description styling */
+.library-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Centering the button list */
+.library-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Button styling */
+.library-button {
+  display: inline-block;
+  text-decoration: none;
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  width: 80%;
+  max-width: 250px;
+  transition: background 0.3s ease-in-out;
+}
+
+.library-button:hover {
+  background: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* favourites */
+
+
+/* General styling */
+.favourites-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title styling */
+.favourites-container h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
 .favourites-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.favourites-table th, 
+.favourites-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.favourites-table th {
+  background: #4a90e2;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.favourites-table tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease-in-out;
+}
+
+.favourites-table tbody tr:hover {
+  background: #f5f5f5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .favourites-container {
+      width: 90%;
+  }
+
+  .favourites-table th, 
+  .favourites-table td {
+      padding: 10px;
+      font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Discover */
+
+
+
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+section {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+
+header p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Genre Section */
+h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #222;
+}
+
+h4 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  background: #eee;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+/* Top Songs Table */
+table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
 }
 
-.favourites-table th,
-.favourites-table td {
-  border: 1px solid #ccc;
-  padding: 10px;
+thead {
+  background: #222;
+  color: #fff;
 }
 
-.favourites-table th {
-  background-color: #f4f4f4;
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
+tr:hover {
+  background: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  section {
+    padding: 15px;
+  }
+
+  ul li {
+    padding: 6px 12px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
