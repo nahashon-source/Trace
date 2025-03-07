@@ -1,4 +1,7 @@
 /* App.css */
+body{
+  background-color: #ccc;
+}
 .app-container {
   display: flex;
   flex-direction: column;
@@ -51,7 +54,6 @@ nav a {
   cursor: allowed;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .pagination li a {
     padding: 6px 10px;

@@ -21,7 +21,7 @@
   }
   
   .music-item.playing {
-    background-color: #64b4b4; /* Spotify Green */
+    background-color: #64b4b4; 
     color: white;
   }
   
