@@ -191,15 +191,15 @@ function HomePage() {
 
   return (
     <div className="homepage">
-      <Hero /> {/* Hero Section */}
+      <Hero /> 
       
       <div className="content">
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-        <Cards musicData={filteredMusic} /> {/* No pagination, just show all filtered items */}
+        <Cards musicData={filteredMusic} />
       </div>
       
-      <Footer /> {/* Footer Section */}
-      <Navbar /> {/* Navbar Section */}
+      <Footer /> 
+      <Navbar /> 
     </div>
   );
 }
