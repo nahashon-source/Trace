@@ -6,11 +6,11 @@
   }
   
   .music-item {
-    display: flex;
+    display: relative;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #222;
+    background-color: #8b8989;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;

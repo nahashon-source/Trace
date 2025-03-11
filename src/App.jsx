@@ -35,8 +35,8 @@ const App = () => {
           <Route path="/playlist" element={<PlaylistPage />} />
           <Route path="/library" element={<Library data={currentItems} pageCount={pageCount} handlePageClick={handlePageClick} />} />
           <Route path="/favourites" element={<Favourites />} />
-          <Route path="/discover" element={<Discover />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/discover" element={<Discover />} />
         </Routes>
       </div>
     </Router>

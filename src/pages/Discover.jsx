@@ -40,6 +40,7 @@ const Discover = () => {
         <header>
           <h2>Discover Music</h2>
           <p>Discover new artists, albums, and playlists</p>
+          <img src="" alt="" />
         </header>
 
         <div>

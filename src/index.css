@@ -5,14 +5,17 @@
   align-items: center;
   height: 100vh;
   width: 100vw; /* Ensures full width */
-  background-color: #f5f5f5;
+  background-image:url(https://media.istockphoto.com/id/1212091413/photo/3d-golden-music-note-on-music-line-in-black-background.jpg?s=612x612&w=0&k=20&c=1MqDXaj7uqo32s2moRlSRuQtKFQ3UKAl11eEmf8UKGc=) ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Styling the library card */
 .library-card {
-  background: white;
+  background: rgb(122, 119, 119);
   padding: 20px;
   border-radius: 10px;
+  color: #ddd;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   width: 350px;
   text-align: center;
@@ -41,7 +44,7 @@
 /* Description styling */
 .library-description {
   font-size: 14px;
-  color: #666;
+  color: #dbd6d6;
   margin-bottom: 20px;
 }
 
@@ -57,7 +60,7 @@
 .library-button {
   display: inline-block;
   text-decoration: none;
-  background: #007bff;
+  background: #12171b;
   color: white;
   padding: 12px;
   border-radius: 5px;
@@ -70,27 +73,14 @@
 }
 
 .library-button:hover {
-  background: #0056b3;
+  background: #9f23af;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.profile-img {
+  width: 13rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 /* favourites */
 
