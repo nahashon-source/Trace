@@ -18,7 +18,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers content vertically */
+    justify-content: center; 
     align-items: center; /* Centers content horizontally */
     height: 60vh; /* Matches the height of the video */
     padding: 0 20px; /* Add some horizontal padding */
