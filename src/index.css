@@ -5,12 +5,12 @@
   align-items: center;
   height: 100vh;
   width: 100vw; /* Ensures full width */
-  background-color: #f5f5f5;
+  background-color: #615e5e;
 }
 
 /* Styling the library card */
 .library-card {
-  background: white;
+  background: rgb(144, 143, 155);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -41,7 +41,7 @@
 /* Description styling */
 .library-description {
   font-size: 14px;
-  color: #666;
+  color: #f3eded;
   margin-bottom: 20px;
 }
 
@@ -57,7 +57,7 @@
 .library-button {
   display: inline-block;
   text-decoration: none;
-  background: #007bff;
+  background: #0d141d;
   color: white;
   padding: 12px;
   border-radius: 5px;
@@ -70,7 +70,7 @@
 }
 
 .library-button:hover {
-  background: #0056b3;
+  background: #b7bbc0;
 }
 
 .container {

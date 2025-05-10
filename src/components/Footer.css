@@ -17,11 +17,7 @@
     margin-bottom: 20px;
   }
   
-  .footer-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+  
   
   .footer-links {
     margin-bottom: 20px;
@@ -36,7 +32,7 @@
   
   .footer-links a {
     text-decoration: none;
-    color: white;
+    color: rgb(56, 52, 52);
     font-size: 16px;
     transition: color 0.3s;
   }
@@ -48,5 +44,46 @@
   .footer-bottom {
     text-align: center;
     font-size: 14px;
+  }
+  .footer-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Arial', sans-serif;
+    color: #131414; /* Initial color */
+    text-shadow: 
+        0 0 5px red,     /* Red glow */
+        0 0 10px green,  /* Green glow */
+        0 0 15px blue,   /* Blue glow */
+        0 0 20px #ffcc00; /* Yellow glow for a more colorful effect */
+    animation: glow-animation 1.5s ease-in-out infinite; /* Make the glow pulse */
+  }
+  
+  /* Keyframe animation for glowing effect */
+  @keyframes glow-animation {
+    0% {
+        text-shadow: 
+            0 0 5px rgb(11, 83, 240),
+            0 0 10px green,
+            0 0 15px blue,
+            0 0 20px #ffcc00;
+    }
+    50% {
+        text-shadow: 
+            0 0 10px rgb(124, 235, 20),
+            0 0 20px green,
+            0 0 30px blue,
+            0 0 40px #ffcc00;
+    }
+    100% {
+        text-shadow: 
+            0 0 5px red,
+            0 0 10px green,
+            0 0 15px blue,
+            0 0 20px #ffcc00;
+    }
   }
   

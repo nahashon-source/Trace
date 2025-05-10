@@ -46,7 +46,6 @@ function Library() {
         <p className="library-description">
           Your playlists, liked songs, artists, and downloads.
         </p>
-
         <div className="library-list">
           <Link to="/Playlist" className="library-button">Playlist</Link>
           <Link to="/Favourites" className="library-button">Favourites</Link>
